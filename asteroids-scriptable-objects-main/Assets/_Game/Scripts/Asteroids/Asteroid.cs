@@ -9,6 +9,7 @@ namespace Asteroids
     public class Asteroid : MonoBehaviour
     {
         [SerializeField] private ScriptableEventInt _onAsteroidDestroyed;
+        [SerializeField] private GameController stats;
         
         [Header("Config:")]
         [SerializeField] private float _minForce;
@@ -81,13 +82,13 @@ namespace Asteroids
 
         private void AddForce()
         {
-            var force = Random.Range(_minForce, _maxForce);
+            var force = Random.Range(stats.asteroidSpeedMin, stats.asteroidSpeedMax);
             _rigidbody.AddForce( _direction * force, ForceMode2D.Impulse);
         }
 
         private void AddTorque()
         {
-            var torque = Random.Range(_minTorque, _maxTorque);
+            var torque = Random.Range(stats.asteroidRotationMin, stats.asteroidRotationMax);
             var roll = Random.Range(0, 2);
 
             if (roll == 0)

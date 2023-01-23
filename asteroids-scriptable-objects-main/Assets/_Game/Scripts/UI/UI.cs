@@ -8,8 +8,10 @@ namespace UI
 {
     public class UI : MonoBehaviour
     {
+
         [Header("Health:")]
-        [SerializeField] private IntVariable _healthVar;
+        [SerializeField] private GameController _healthVar;
+        
         [SerializeField] private TextMeshProUGUI _healthText;
         [SerializeField] private ScriptableEventIntReference _onHealthChangedEvent;
         
@@ -24,7 +26,7 @@ namespace UI
         
         private void Start()
         {
-            SetHealthText($"Health: {_healthVar.Value}");
+            SetHealthText($"Health: {_healthVar.playerMaxHealth}");
         }
 
         public void OnHealthChanged(IntReference newValue)

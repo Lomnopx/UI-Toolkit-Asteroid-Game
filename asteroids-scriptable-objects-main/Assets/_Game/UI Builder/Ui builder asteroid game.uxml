@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Game/UI%20Builder/Ui%20builder%20asteroid%20game.uss?fileID=7433441132597879392&amp;guid=fba2bde461a287848b2f4f46b336391e&amp;type=3#Ui builder asteroid game" />
+    <ui:VisualElement style="margin-right: 80%; margin-top: 3%; max-width: none; min-width: 400px;">
+        <ui:Label text="Asteroids" display-tooltip-when-elided="true" name="asteroidHeader" class="Heading" />
+        <ui:MinMaxSlider picking-mode="Ignore" label="Asteroid Rotation speed" min-value="10" max-value="12" low-limit="0" high-limit="40" name="asteroidRotationSpeedSlider" class="MainText" />
+        <ui:MinMaxSlider picking-mode="Ignore" label="Asteroid Speed" min-value="10" max-value="12" low-limit="0" high-limit="40" name="asteroidSpeedSlider" class="MainText" />
+        <ui:SliderInt picking-mode="Ignore" label="Asteroid Damage" value="42" high-value="10" name="asteroidDamageSlider" class="MainText" />
+        <ui:Label text="Player " display-tooltip-when-elided="true" name="playerHeader" class="Heading" style="margin-top: 5px; margin-bottom: 2px; padding-top: 0; padding-bottom: 0;" />
+        <ui:Slider picking-mode="Ignore" label="Player speed" value="42" high-value="20" name="playerSpeedSlider" class="MainText" />
+        <ui:SliderInt picking-mode="Ignore" label="Player MaxHealth" value="42" high-value="100" name="playerHealthSlider" class="MainText" style="color: rgb(255, 255, 255); -unity-text-outline-color: rgb(255, 255, 255);" />
+        <ui:Toggle label="Godmode" name="playerGodmodeTogggle" class="MainText" />
+        <ui:ProgressBar value="22" title="Player Health" name="playerHealthBar" />
+    </ui:VisualElement>
+</ui:UXML>
