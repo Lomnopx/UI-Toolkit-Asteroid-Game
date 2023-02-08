@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 561f61b6e886eb84daa58bedb54324a0, type: 3}
   m_Name: GameControllerScriptableObject
   m_EditorClassIdentifier: 
-  playerHealth: 100
-  playerMaxHealth: 100
-  playerSpeed: 81
-  asteroidSpeedMin: -10
-  asteroidSpeedMax: -0.46915436
-  asteroidDmg: 1
+  playerHealth: 55
+  playerMaxHealth: 1
+  playerSpeed: 3
+  godmode: 0
+  asteroidSpeedMin: 0.1
+  asteroidSpeedMax: 2
+  asteroidDmg: 5
   asteroidRotationMin: 12
   asteroidRotationMax: 40

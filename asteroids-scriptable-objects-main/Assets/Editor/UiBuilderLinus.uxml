@@ -1,5 +1,5 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/_Game/UI%20Builder/Ui%20builder%20asteroid%20game.uss?fileID=7433441132597879392&amp;guid=fba2bde461a287848b2f4f46b336391e&amp;type=3#Ui builder asteroid game" />
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/UiBuilderLinus.uss?fileID=7433441132597879392&amp;guid=fba2bde461a287848b2f4f46b336391e&amp;type=3#UiBuilderLinus" />
     <ui:VisualElement style="margin-right: 80%; margin-top: 3%; max-width: none; min-width: 400px;">
         <ui:Label text="Asteroids" display-tooltip-when-elided="true" name="asteroidHeader" class="Heading" />
         <ui:MinMaxSlider picking-mode="Ignore" label="Asteroid Rotation speed" min-value="10" max-value="12" low-limit="0" high-limit="40" name="asteroidRotationSpeedSlider" class="MainText" />

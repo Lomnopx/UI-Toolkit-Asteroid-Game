@@ -9,5 +9,5 @@
 .MainText {
     color: rgb(255, 255, 255);
     font-size: 10.5px;
-    -unity-text-outline-color: rgba(255, 255, 255, 255);
+    -unity-text-outline-color: rgb(255, 255, 255);
 }
